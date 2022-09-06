@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .container{
@@ -23,7 +24,6 @@ a{
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-
 
     &__top-content{
         display: flex;
@@ -60,10 +60,21 @@ a{
     &__logo{
         max-width: 125px;
         width: 100%;
+        margin-right: 48px;
     }
 
     &__bottom-text-wrap{
-        
+
+        padding-bottom: 4px;
+        font-size: 14px;
+        line-height: 42px;
+    }
+
+    &__bottom-text{
+        text-decoration: none;
+        margin-right: 32px;
+        font-weight: 600;
+        color: #222;
     }
 }
 
