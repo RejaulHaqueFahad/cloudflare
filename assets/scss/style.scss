@@ -24,32 +24,39 @@ a{
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 0px 1px 0px 0px #2222;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 
     &__top-content{
         display: flex;
         justify-content: flex-end;
-        gap: 5px;
+        gap: 8px;
         align-items: center;
-        cursor: pointer;
     }
 
     &__top-text{
-        font-size: 14px;
+        font-size: 11px;
         font-weight: normal;
         text-decoration: none;
+        color: $textColor;
+        cursor: pointer;
     }
 
     &__top-icon{
         display: flex;
         align-items: center;
         font-size: 16px;
+        cursor: pointer;
     }
-
 
     &__bottom-content{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-top: 20px;
     }
 
     &__bottom-left{
@@ -64,8 +71,6 @@ a{
     }
 
     &__bottom-text-wrap{
-
-        padding-bottom: 4px;
         font-size: 14px;
         line-height: 42px;
     }
@@ -73,8 +78,59 @@ a{
     &__bottom-text{
         text-decoration: none;
         margin-right: 32px;
-        font-weight: 600;
-        color: #222;
+        color: $textColor;
+        padding-bottom: 8px;
+
+        &:hover{
+            color: $hoverFontcolor;
+            border-bottom: 2px solid $hoverFontcolor;
+        }
     }
+
+    &__bottom-right{
+        display: flex;
+        align-items: center;
+    }
+
+    &__search-icon-wrap{
+        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+    }
+
+    &__search-icon{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__button-wrap{
+        line-height: 40px;
+        font-size: 14px;
+        overflow: hidden;
+    }
+
+    &__button-login{
+        text-decoration: none;
+        color: #0051c3;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__button-attack{
+        text-decoration: none;
+        background-color: $buttonOrange;
+        color: #fff;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.bold-login{
+    font-weight: bold;
 }
 
